@@ -1,0 +1,11 @@
+# flyctl launch added from .gitignore
+target
+Cargo.lock
+Cargo.toml
+
+# flyctl launch added from pkg/.gitignore
+src/**/*
+
+# flyctl launch added from www/pkg/.gitignore
+
+fly.toml

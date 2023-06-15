@@ -1,0 +1,16 @@
+{
+  "name": "filetype-wasm",
+  "version": "0.1.0",
+  "files": [
+    "filetype_wasm_bg.wasm",
+    "filetype_wasm.js",
+    "filetype_wasm_bg.js",
+    "filetype_wasm.d.ts"
+  ],
+  "module": "filetype_wasm.js",
+  "types": "filetype_wasm.d.ts",
+  "sideEffects": [
+    "./filetype_wasm.js",
+    "./snippets/*"
+  ]
+}
