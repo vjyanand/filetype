@@ -4,18 +4,23 @@
 <head>
   <meta charset="utf-8" />
   <title>hello-wasm</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <script src='./pkg/filetype_wasm.js'></script>
-  <script src="./index.js"></script>
-
   <p>
-    <label for="file_picker">Choose a file</label>
-    <input type="file" id="file_picker" name="file_picker">
+    <div id="drop-area">
+      <form class="my-form">
+        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+        <input type="file" id="file_picker" onchange="handleFiles(this.files)">
+        <label class="button" for="file_picker">Select file</label>
+      </form>
+    </div>
+
   </p>
-
-
+  
+  <script src="./index.js"></script>
+  
 </body>
 
 </html>

@@ -8,8 +8,7 @@ async function run_in_worker() {
 
 run_in_worker();
 
-onmessage = async function(e) {
-    console.log("onmessage inside worker.js runs");
+onmessage = async function (e) {
     let workerResult = read_at_offset_sync(
         e.data.file,
     );
