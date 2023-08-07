@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>hello-wasm</title>
   <link rel="stylesheet" href="index.css">
 </head>
@@ -11,16 +12,12 @@
   <p>
     <div id="drop-area">
       <form class="my-form">
-        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
-        <input type="file" id="file_picker" onchange="handleFiles(this.files)">
+        <p>Upload a file with the file dialog or by dragging and dropping files onto the dashed region</p>
+        <input type="file" id="file_picker">
         <label class="button" for="file_picker">Select file</label>
       </form>
     </div>
-
   </p>
-  
   <script src="./index.js"></script>
-  
 </body>
-
 </html>
